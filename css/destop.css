@@ -1,0 +1,50 @@
+body{
+    background:url('../images/bg-pattern-top-desktop.svg'),
+    url('../images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: max(50%, 400px);  
+    background-position: left top, right bottom;
+    padding: 60px 100px;
+}
+
+.container{
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+   
+}
+
+.intro{
+    grid-column: 1 / 2;
+    text-align: left;
+    width: 29.6rem;
+    padding-left: 30px;
+}
+.intro h1{
+    width: 300px;
+    font-size: 2.3rem;
+}
+.ratings-card{
+    grid-column: 2/3;
+  
+   
+}
+.rating-result{
+    flex-direction: row;
+    padding: 10px 30px 10px 10px;
+}
+.rating-result:first-of-type{
+    margin-left: 0px;
+}
+.rating-result:last-of-type{
+    margin-right: 0px;
+}
+.quotes{
+    grid-column: 1/-1;
+    flex-direction: row;
+}
+.member:nth-child(2){
+    transform: translateY(1.5rem);
+}
+.member:nth-child(3){
+    transform: translateY(3rem);
+}
